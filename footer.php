@@ -1,0 +1,78 @@
+<?php
+/**
+ * @package 
+ */
+?>
+
+<?php global $tx_switch; ?>
+
+    <!-- Inicia Footer ========== -->
+        <footer id="footer" class="clearfix" >
+            <div class="row">
+                <div class="col-md-6 wow fadeInLeft" data-wow-delay=".7s">
+                    <p class="copyright">Diseñado por <a href="#" target="_blank">DV</a> Derechos Reservados</p>
+                </div> 
+                <div class="col-md-6  wow fadeInRight" data-wow-delay=".7s">
+                    <ul class="social-icon">
+                        <?php 
+                            $footer_fb = $tx_switch['footer_facebook_link'] ;
+                            if(!empty($footer_fb)){ ?>
+                                <li>
+                                <a class="fb"  target="_blank" href="<?php echo $footer_fb ;?>">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+                        <?php } ?>
+
+                        <?php 
+                            $footer_twitter =$tx_switch['footer_twitter_link'];
+                            if(!empty($footer_twitter)){ ?>
+                                <li>
+                                <a class="twitter"  target="_blank" href="<?php echo $footer_twitter ;?>">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                        <?php } ?>
+
+                        <?php 
+                            $footer_linkedin =$tx_switch['footer_linkedin_link'];
+                            if(!empty($footer_linkedin)){ ?>
+                                <li>
+                                <a class="linkedin"  target="_blank" href="<?php echo $footer_linkedin ;?>">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </li>
+                        <?php } ?>
+
+                        <?php 
+                            $footer_pinterest =$tx_switch['footer_pinterest_link'];
+                            if(!empty($footer_pinterest)){ ?>
+                                <li>
+                                <a class="pinterest"  target="_blank" href="<?php echo $footer_pinterest ;?>">
+                                    <i class="fa fa-pinterest"></i>
+                                </a>
+                            </li>
+                        <?php } ?>
+
+                        <?php 
+                            $footer_dribbble =$tx_switch['footer_dribbble_link'];
+                            if(!empty($footer_dribbble)){ ?>
+                                <li>
+                                <a class="dribbble"  target="_blank" href="<?php echo $footer_dribbble ;?>">
+                                    <i class="fa fa-dribbble"></i>
+                                </a>
+                            </li>
+                        <?php } ?>
+                    </ul>
+                </div> 
+            </div> 
+        </footer> 
+<?php wp_footer(); ?>
+
+
+        <!-- Javascript -->
+
+
+
+</body>
+</html>
